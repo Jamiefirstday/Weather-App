@@ -135,22 +135,33 @@ table {
 }
 
 /* Finley's coding start here */
+/* 確保所有元素都使用 box-sizing: border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgba(7, 76, 37, 0.799);
+    margin: 0;
+    /* 確保body沒有預設的margin */
+
 }
 
 /* weather card */
 .card {
     width: 90%;
     margin: 20px auto;
-    max-width: 420px;
+    max-width: 430px;
     background: rgb(198, 179, 144);
     color: rgb(78, 59, 59);
     text-align: center;
     border-radius: 20px;
     padding: 40px;
     padding-bottom: 60px;
+
 }
 
 /* search bar design */
@@ -205,19 +216,24 @@ body {
     font-size: 32px;
     margin-bottom: 36px;
 }
-.details{
+
+.details {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap
 }
-.details .col{
+
+.details .col {
     display: flex;
 
 }
-.col img{
+
+.col img {
     width: 40px;
 }
-.col p{
+
+.col p {
     text-align: start;
     line-height: 1.2;
     font-size: 16px;
