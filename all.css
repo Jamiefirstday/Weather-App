@@ -1,0 +1,28 @@
+body{
+    font-size: 24px;
+    line-height: 1.5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(7, 76, 37, 0.799);
+}
+.card{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 470px;
+    background: wheat;
+    color: rgb(104, 79, 79);
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.search input{
+    border-radius: 20px;
+    border: 0px solid lightslategray;
+    background: rgba(223, 219, 216, 0.784);
+    padding: 10px 25px;
+    height: 45px;
+}
